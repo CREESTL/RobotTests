@@ -30,6 +30,8 @@ Ensure Homepage is Open
     Go to Homepage
     Location Should Be      ${main_url}
 
+# TODO Add admin login
+
 Login With Valid Credentials
     Input Text           id=email      ${valid_username}
     Input Password       id=password      ${valid_user_password}
