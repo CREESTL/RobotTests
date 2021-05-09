@@ -1,7 +1,10 @@
 venv/
 *.pyc
 .idea/
-log.html
-output.xml
-report.html
+*.html
+*.xml
 chromedriver.exe
+node_modules/
+package-lock.json
+swagger.yaml
+
