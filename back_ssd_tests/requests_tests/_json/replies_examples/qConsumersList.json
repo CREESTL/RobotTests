@@ -1,0 +1,10 @@
+{
+"Consumers":
+[
+          {"cons_uid": "1234345",
+          "cons_ful_name": "ПАО \"Газпром\"",
+          "cons_group": "4",
+          "cur_fio": "Иванов Иван Иванович",
+          "cons_istelemetr": "true"}
+]
+}
