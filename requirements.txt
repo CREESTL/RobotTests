@@ -1,6 +1,7 @@
 robotframework
 robotframework-selenium2library
 robotframework-requests
+robotframework-jsonlibrary
 flask
 requests
 
