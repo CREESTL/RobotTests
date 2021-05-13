@@ -1,14 +1,26 @@
 from flask import Flask
+import json
+import os
+
 
 app = Flask(__name__)
+path = os.path.dirname(os.path.abspath(__file__))
 
-# TODO add all routes from the doc here
-# TODO Take json replies with according names from json/replies_examples folder
+# TODO  do everything according to the scheme
+
+@app.route('/api/qEnableService.json', methods=["POST"])
+def qEnableService():
+    return json.load(open(path + "/_json/replies_examples/qEnableService.json", 'r'))
 
 
-@app.route('/api//test')
-def index():
-    return {"main_text": "This is a test page"}
+@app.route('/api/qConsumersList.json', methods=["POST"])
+def qConsumersList():
+    return json.load(open(path + "/_json/replies_examples/qConsumersList.json", 'r'))
+
+
+@app.route('/api/qConsumerRegistration.json', methods=["POST"])
+def qConsumerRegistration():
+    return json.load(open(path + "/_json/replies_examples/qConsumerRegistration.json", 'r'))
 
 
 if __name__ == '__main__':
