@@ -5,7 +5,7 @@ Library         RequestsLibrary
 
 
 *** Variables ***
-${main_url}     http://194.87.101.220:8888/
+${main_url}     http://45.141.102.7:8888/api/
 # TODO add {ids}
 ${get_urls}     users/sub_logins   users/notices       users/roles
 ${post_urls}    users/register      users/confirm       users/login     users/sub_logins    users/notices   users/roles     users/register_new      users/register_new_confirm      users/login_sbis    users/sert_list     users/auth_by_sert      users/consumers     users/consumers/confirm

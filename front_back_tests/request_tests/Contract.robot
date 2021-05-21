@@ -5,7 +5,7 @@ Library         RequestsLibrary
 
 
 *** Variables ***
-${main_url}     http://194.87.101.220:8888/
+${main_url}     http://45.141.102.7:8888/api/
 # TODO add {ids}
 ${get_urls}     contracts/mets_volumes      contracts/      contracts/fact      contracts/settlement    contracts/payments      contracts/balance
 ${post_urls}    contracts/mets_volumes

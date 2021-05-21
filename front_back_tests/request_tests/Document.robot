@@ -5,7 +5,7 @@ Library         RequestsLibrary
 
 
 *** Variables ***
-${main_url}     http://194.87.101.220:8888/
+${main_url}     http://45.141.102.7:8888/api/
 # TODO add {ids}
 ${get_urls}     files/term_of_use       files/documents/sbis_types      files/documents     files/documents/attachment      files/documents/history     files/documents/gGetDocInForm
 ${post_urls}    files/term_of_user/confirm      files/term_of_user      files/documents/installing      files/documents     files/documents/sign        files/documents/send_to_saved_sign  files/signed_documents      files/documents/{id}/attachment
