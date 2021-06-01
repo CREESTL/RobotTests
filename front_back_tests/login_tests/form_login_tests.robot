@@ -27,6 +27,12 @@ Write Token Into File
     [Arguments]     ${token}
     Create File     token.txt    ${token}
 
+Create Headers
+    [Arguments]     ${token}
+    ${headers}      Create Dictionary       Accept="application/json"     Authorization="Bearer {token}"
+    ${headers}      Set Variable            ${headers}
+
+
 *** Test Cases ***
 Ensure Google is Open
     Location Should Be      ${chrome_url}
@@ -43,8 +49,11 @@ Login With Valid Credentials
 Ensure Login Successful
     Page Should Contain     Помощь
 
+
+# TODO make it in separate file
 Login Through Post
     ${body}     Create Dictionary       login=makss56@gmail.com     password=Qwerty123
     ${resp}     POST                    ${login_url}                data=${body}
     ${token}    Set Variable            ${resp.json()['token']}
     Write Token Into File               ${token}
+    Create Headers                      ${token}
