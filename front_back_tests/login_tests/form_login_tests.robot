@@ -50,10 +50,3 @@ Ensure Login Successful
     Page Should Contain     Помощь
 
 
-# TODO make it in separate file
-Login Through Post
-    ${body}     Create Dictionary       login=makss56@gmail.com     password=Qwerty123
-    ${resp}     POST                    ${login_url}                data=${body}
-    ${token}    Set Variable            ${resp.json()['token']}
-    Write Token Into File               ${token}
-    Create Headers                      ${token}
